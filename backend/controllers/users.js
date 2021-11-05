@@ -23,7 +23,7 @@ module.exports.createUser = (req, res, next) => {
           },
         }))
         .catch((err) => {
-          if (err.name === 'MongoServerError') {
+          if (err.name === 'MongoError' && err.code === 11000) {
             next(new ConflictError('Пользователь с данным email уже существует'));
           }
           if (err.name === 'CastError' || (err.name === 'ValidationError')) {
