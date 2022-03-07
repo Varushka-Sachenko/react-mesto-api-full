@@ -1,9 +1,6 @@
 # Публичный IP-адрес
 62.84.122.99
 
-# Домен
-http://mesto-cards.nomoredomains.rocks/sign-in
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
